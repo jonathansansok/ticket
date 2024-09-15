@@ -5,8 +5,8 @@ require_once("../Models/Ticket.php");
 
 class Whastapp extends Conectar{
 
-    protected $account_sid = 'AC2f57c617c0fb91278f501093d6473357';
-    protected $auth_token = '414dcaa1f266346f83bf7ab79e4e189e';
+    protected $account_sid = '';
+    protected $auth_token = '';
 
     /* TODO: Enviar alerta por Whastapp de ticket Abierto */
     public function w_ticket_abierto($tick_id){
