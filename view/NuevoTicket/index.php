@@ -64,7 +64,7 @@
 
 						<div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="exampleInput">SubCategoria (*)</label>
+								<label class="form-label semibold" for="exampleInput">Subcategoria (*)</label>
 								<select id="cats_id" name="cats_id" class="form-control select2" required>
 									<option value="">Seleccionar</option>
 								</select>
@@ -73,7 +73,7 @@
 
 						<div class="col-lg-6">
 							<fieldset class="form-group">
-								<label class="form-label semibold" for="exampleInput">Prioridad (*)</label>
+								<label class="form-label semibold" for="exampleInput">Nº P.C. (*)</label>
 								<select id="prio_id" name="prio_id" class="form-control select2" required>
 									<option value="">Seleccionar</option>
 								</select>

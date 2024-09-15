@@ -65,7 +65,7 @@ if (isset($_SESSION["usu_id"])) {
 
               <div class="col-lg-4">
                 <fieldset class="form-group">
-                  <label class="form-label semibold" for="cat_nom">Prioridad</label>
+                  <label class="form-label semibold" for="cat_nom">Nº P.C.</label>
                   <input type="text" class="form-control" id="prio_nom" name="prio_nom" readonly>
                 </fieldset>
               </div>

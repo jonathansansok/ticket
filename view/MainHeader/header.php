@@ -2,7 +2,7 @@
     <div class="container-fluid">
 
         <a href="#" class="site-logo">
-           <h2>DAIP </h2>
+           <h2>DAIP</h2>
         </a>
 
         <button id="show-hide-sidebar-toggle" class="show-hide-sidebar" style="margin-left: 10px;">

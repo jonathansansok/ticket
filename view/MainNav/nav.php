@@ -55,7 +55,7 @@
                     <li class="blue-dirty">
                         <a href="..\MntPrioridad\">
                             <span class="glyphicon glyphicon-th"></span>
-                            <span class="lbl">Mant. Prioridad</span>
+                            <span class="lbl">Nº P.C.</span>
                         </a>
                     </li>
 

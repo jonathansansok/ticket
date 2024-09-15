@@ -22,10 +22,10 @@
 				<div class="tbl">
 					<div class="tbl-row">
 						<div class="tbl-cell">
-							<h3>Mantenimiento Prioridad</h3>
+							<h3>Nº P.C.</h3>
 							<ol class="breadcrumb breadcrumb-simple">
 								<li><a href="#">Home</a></li>
-								<li class="active">Mantenimiento Prioridad</li>
+								<li class="active">Nº P.C.</li>
 							</ol>
 						</div>
 					</div>

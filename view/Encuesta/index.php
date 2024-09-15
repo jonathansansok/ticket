@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="fechaActual">Prioridad</label>
+                            <label for="fechaActual">Nº P.C.</label>
                             <input type="text" class="form-control" id="prio_nom" name="prio_nom" readonly>
                         </div>
                     </div>
