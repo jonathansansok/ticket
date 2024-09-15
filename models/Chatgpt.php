@@ -11,7 +11,7 @@
                 $tick_descrip = $row["tick_descrip"];
             }
 
-            //$apikey = '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';
+            //$apikey = '';
              $apikey = '';
             $data = [
                 'model' => 'text-davinci-002',
