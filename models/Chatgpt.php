@@ -12,7 +12,7 @@
             }
 
             //$apikey = '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';
-             $apikey = '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';
+             $apikey = '';
             $data = [
                 'model' => 'text-davinci-002',
                 'prompt' => 'Responde como un tecnico de soporte ti: '.$tick_descrip,

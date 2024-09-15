@@ -1,5 +1,5 @@
 <?php
-    $apikey = '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';
+    $apikey = '';
 
     $data = [
         'model' => 'text-davinci-002',
