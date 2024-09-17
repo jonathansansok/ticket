@@ -18,7 +18,11 @@
 
                     <div class="form-group">
                         <label class="form-label" for="usu_ape">División</label>
-                        <input type="text" class="form-control" id="usu_ape" name="usu_ape" placeholder="Ingrese división" required>
+                        <select class="form-control" id="usu_ape" name="usu_ape" required>
+                            <option value="">Seleccionar</option>
+                            <option value="Contrainteligencia">Contrainteligencia</option>
+                            <option value="Riesgo">Riesgo</option>
+                        </select>
                     </div>
 
                     <div class="form-group">
