@@ -55,7 +55,7 @@ $(document).ready(function(){
             "bDestroy": true,
             "responsive": true,
             "bInfo":true,
-            "iDisplayLength": 10,
+            "iDisplayLength": 11,
             "autoWidth": false,
             "language": {
                 "sProcessing":     "Procesando...",
@@ -223,7 +223,7 @@ function listardatatable(tick_titulo,cat_id,prio_id){
         "bDestroy": true,
         "responsive": true,
         "bInfo":true,
-        "iDisplayLength": 10,
+        "iDisplayLength": 11,
         "autoWidth": false,
         "language": {
             "sProcessing":     "Procesando...",
@@ -259,7 +259,7 @@ function limpiar(){
             "<thead>"+
                 "<tr>"+
                     "<th style='width: 5%;'>Nro.Ticket</th>"+
-                    "<th style='width: 15%;'>Categoria</th>"+
+                    "<th style='width: 10%;'>Categoria</th>"+
                     "<th class='d-none d-sm-table-cell' style='width: 30%;'>Titulo</th>"+
                     "<th class='d-none d-sm-table-cell' style='width: 5%;'>Nº P.C.</th>"+
                     "<th class='d-none d-sm-table-cell' style='width: 5%;'>Estado</th>"+
@@ -268,6 +268,7 @@ function limpiar(){
                     "<th class='d-none d-sm-table-cell' style='width: 10%;'>Fecha Cierre</th>"+
                     "<th class='d-none d-sm-table-cell' style='width: 10%;'>Soporte</th>"+
                     "<th class='text-center' style='width: 5%;'></th>"+
+                    "<th class='d-none d-sm-table-cell' style='width: 5%;'>División</th>"+
                 "</tr>"+
             "</thead>"+
             "<tbody>"+

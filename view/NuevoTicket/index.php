@@ -71,12 +71,22 @@
 							</fieldset>
 						</div>
 
+
+
 						<div class="col-lg-6">
 							<fieldset class="form-group">
 								<label class="form-label semibold" for="exampleInput">Nº P.C. (*)</label>
 								<select id="prio_id" name="prio_id" class="form-control select2" required>
 									<option value="">Seleccionar</option>
 								</select>
+							</fieldset>
+						</div>
+
+						<div class="col-lg-6">
+							<fieldset class="form-group">
+								<label class="form-label semibold" for="exampleInput">División (*)</label>
+								<textarea id="prio_id" name="prio_id" class="form-control" rows="1" placeholder="Escribe aquí..."></textarea>
+
 							</fieldset>
 						</div>
 

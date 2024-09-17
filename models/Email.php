@@ -241,6 +241,7 @@ class Email extends PHPMailer{
             $usu_id = $row["usu_id"];
             $usu_ape = $row["usu_ape"];
             $usu_nom = $row["usu_nom"];
+            $usu_div = $row["usu_div"];
             $correo = $row["usu_correo"];
             $usu_pass= $row["usu_pass"];
         }
@@ -265,6 +266,7 @@ class Email extends PHPMailer{
         /*TODO: parametros del template a remplazar */
         $cuerpo = str_replace("xusunom", $usu_nom, $cuerpo);
         $cuerpo = str_replace("xusuape", $usu_ape, $cuerpo);
+        $cuerpo = str_replace("xusuape", $usu_div, $cuerpo);
         $cuerpo = str_replace("xnuevopass", $usu_pass, $cuerpo);
 
         $this->Body = $cuerpo;

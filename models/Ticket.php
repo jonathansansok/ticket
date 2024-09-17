@@ -38,6 +38,7 @@
                 tm_ticket.fech_asig,
                 tm_usuario.usu_nom,
                 tm_usuario.usu_ape,
+                tm_usuario.usu_div,
                 tm_categoria.cat_nom,
                 tm_ticket.prio_id,
                 tm_prioridad.prio_nom
@@ -75,6 +76,7 @@
                 tm_ticket.usu_asig,
                 tm_usuario.usu_nom,
                 tm_usuario.usu_ape,
+                tm_usuario.usu_div,
                 tm_usuario.usu_correo,
                 tm_usuario.usu_telf,
                 tm_categoria.cat_nom,
@@ -113,6 +115,7 @@
                 tm_ticket.fech_asig,
                 tm_usuario.usu_nom,
                 tm_usuario.usu_ape,
+                tm_usuario.usu_div,
                 tm_categoria.cat_nom,
                 tm_ticket.prio_id,
                 tm_prioridad.prio_nom
@@ -139,6 +142,7 @@
                 td_ticketdetalle.fech_crea,
                 tm_usuario.usu_nom,
                 tm_usuario.usu_ape,
+                tm_usuario.usu_div,
                 tm_usuario.rol_id
                 FROM 
                 td_ticketdetalle
@@ -359,7 +363,7 @@
             parent::set_names();
             $sql="SELECT 
                     tm_ticket.tick_id as id,
-                    concat(tm_usuario.usu_nom,' ',tm_usuario.usu_ape) as title,
+                    concat(tm_usuario.usu_nom,' ',tm_usuario.usu_ape,tm_usuario.usu_div) as title,
                     tm_ticket.fech_crea as start,
                     CASE
                         WHEN tm_ticket.tick_estado = 'Abierto' THEN 'green'
@@ -379,7 +383,7 @@
             parent::set_names();
             $sql="SELECT 
                     tm_ticket.tick_id as id,
-                    concat(tm_usuario.usu_nom,' ',tm_usuario.usu_ape) as title,
+                    concat(tm_usuario.usu_nom,' ',tm_usuario.usu_ape,tm_usuario.usu_div) as title,
                     tm_ticket.fech_crea as start,
                     CASE
                         WHEN tm_ticket.tick_estado = 'Abierto' THEN 'green'

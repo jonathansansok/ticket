@@ -22,6 +22,12 @@
                     </div>
 
                     <div class="form-group">
+                        <label class="form-label" for="usu_div">Div</label>
+                        <input type="text" class="form-control" id="usu_div" name="usu_div" placeholder="Ingrese Div" required>
+                    </div>
+
+
+                    <div class="form-group">
                         <label class="form-label" for="usu_correo">Correo Electronico</label>
                         <input type="email" class="form-control" id="usu_correo" name="usu_correo" placeholder="test@test.com" required>
                     </div>

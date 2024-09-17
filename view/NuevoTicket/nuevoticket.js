@@ -63,7 +63,7 @@ function guardaryeditar(e){
     /* TODO: Array del form ticket */
     var formData = new FormData($("#ticket_form")[0]);
     /* TODO: validamos si los campos tienen informacion antes de guardar */
-    if ($('#tick_descrip').summernote('isEmpty') || $('#tick_titulo').val()=='' || $('#cats_id').val() == 0 || $('#cat_id').val() == 0 || $('#prio_id').val() == 0){
+    if ($('#tick_descrip').summernote('isEmpty') || $('#tick_titulo').val()=='' || $('#cats_id').val() == 0 || $('#cat_id').val() == 0 || $('#prio_id').val() == 0 || $('#prio_div').val() == 0){
         swal("Advertencia!", "Campos Vacios", "warning");
     }else{
         var totalfiles = $('#fileElem').val().length;

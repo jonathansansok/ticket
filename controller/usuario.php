@@ -16,10 +16,10 @@
             $datos= $usuario->get_usuario_x_correo($_POST["usu_correo"]);
             if(count($datos)==0){
                 if(empty($_POST["usu_id"])){
-                    $usuario->insert_usuario($_POST["usu_nom"],$_POST["usu_ape"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["rol_id"],$_POST["usu_telf"]);
+                    $usuario->insert_usuario($_POST["usu_nom"],$_POST["usu_ape"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["rol_id"],$_POST["usu_telf"],$_POST["usu_div"]);
                     echo "1";
                 } else {
-                    $usuario->update_usuario($_POST["usu_id"],$_POST["usu_nom"],$_POST["usu_ape"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["rol_id"],$_POST["usu_telf"]);
+                    $usuario->update_usuario($_POST["usu_id"],$_POST["usu_nom"],$_POST["usu_ape"],$_POST["usu_correo"],$_POST["usu_pass"],$_POST["rol_id"],$_POST["usu_telf"],$_POST["usu_div"]);
                     echo "2";
                 }
             }else{
@@ -35,6 +35,7 @@
                 $sub_array = array();
                 $sub_array[] = $row["usu_nom"];
                 $sub_array[] = $row["usu_ape"];
+                $sub_array[] = $row["usu_div"];
                 $sub_array[] = $row["usu_correo"];
                 $sub_array[] = $row["usu_pass"];
 
@@ -70,6 +71,7 @@
                     $output["usu_id"] = $row["usu_id"];
                     $output["usu_nom"] = $row["usu_nom"];
                     $output["usu_ape"] = $row["usu_ape"];
+                    $output["usu_div"] = $row["usu_div"];
                     $output["usu_correo"] = $row["usu_correo"];
 
                     $iv_dec = substr(base64_decode($row["usu_pass"]), 0, openssl_cipher_iv_length($cipher));
@@ -165,6 +167,7 @@
                 $_SESSION["usu_id"]=$datos[0]["usu_id"];
                 $_SESSION["usu_nom"]=$datos[0]["usu_nom"];
                 $_SESSION["usu_ape"]=$datos[0]["usu_ape"];
+                $_SESSION["usu_div"]=$datos[0]["usu_div"];
                 $_SESSION["rol_id"]=$datos[0]["rol_id"];
                 echo "1";
             }

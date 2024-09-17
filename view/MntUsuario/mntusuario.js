@@ -125,6 +125,7 @@ function editar(usu_id){
         $('#usu_id').val(data.usu_id);
         $('#usu_nom').val(data.usu_nom);
         $('#usu_ape').val(data.usu_ape);
+        $('#usu_div').val(data.usu_div);
         $('#usu_correo').val(data.usu_correo);
         $('#usu_pass').val(data.usu_pass);
         $('#rol_id').val(data.rol_id).trigger('change');

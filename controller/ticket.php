@@ -288,7 +288,7 @@
                                                 <img src="../../public/<?php echo $row['rol_id'] ?>.jpg" alt="">
                                             </a>
                                         </div>
-                                        <div class="activity-line-item-user-name"><?php echo $row['usu_nom'].' '.$row['usu_ape'];?></div>
+                                        <div class="activity-line-item-user-name"><?php echo $row['usu_nom'].' '.$row['usu_ape'].$row['usu_div'];?></div>
                                         <div class="activity-line-item-user-status">
                                             <!-- TODO: Mostrar perfil del usuario segun rol -->
                                             <?php
@@ -388,6 +388,7 @@
                     $output["fech_cierre"] = date("d/m/Y H:i:s", strtotime($row["fech_cierre"]));
                     $output["usu_nom"] = $row["usu_nom"];
                     $output["usu_ape"] = $row["usu_ape"];
+                    $output["usu_div"] = $row["usu_div"];
                     $output["cat_nom"] = $row["cat_nom"];
                     $output["cats_nom"] = $row["cats_nom"];
                     $output["tick_estre"] = $row["tick_estre"];
@@ -423,6 +424,7 @@
                     $output["usu_nom"] = $row["usu_nom"];
                     $output["usu_ape"] = $row["usu_ape"];
                     $output["cat_nom"] = $row["cat_nom"];
+                    $output["cat_div"] = $row["cat_div"];
                     $output["cats_nom"] = $row["cats_nom"];
                     $output["tick_estre"] = $row["tick_estre"];
                     $output["tick_coment"] = $row["tick_coment"];

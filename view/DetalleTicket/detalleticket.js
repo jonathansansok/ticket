@@ -249,7 +249,7 @@ function mostraryvalidar(id){
     $.post("../../controller/ticket.php?op=mostrar", { tick_id : id }, function (data) {
         data = JSON.parse(data);
         $('#lblestado').html(data.tick_estado);
-        $('#lblnomusuario').html(data.usu_nom +' '+data.usu_ape);
+        $('#lblnomusuario').html(data.usu_nom +' '+data.usu_ape+' '+data.usu_div);
         $('#lblfechcrea').html(data.fech_crea);
 
         $('#lblnomidticket').html("Detalle Ticket - "+data.tick_id);

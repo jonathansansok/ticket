@@ -51,7 +51,12 @@
                             <span class="lbl">Mant. Usuario</span>
                         </a>
                     </li>
-
+                    <li class="blue-dirty">
+                        <a href="..\MntPrioridad\">
+                            <span class="glyphicon glyphicon-th"></span>
+                            <span class="lbl">División</span>
+                        </a>
+                    </li>
                     <li class="blue-dirty">
                         <a href="..\MntPrioridad\">
                             <span class="glyphicon glyphicon-th"></span>

@@ -18,7 +18,7 @@ function listardetalle(tick_id){
     $.post("../../controller/ticket.php?op=mostrar_noencry", { tick_id : tick_id }, function (data) {
         data = JSON.parse(data);
         $('#lblestado').val(data.tick_estado_texto);
-        $('#lblnomusuario').val(data.usu_nom +' '+data.usu_ape);
+        $('#lblnomusuario').val(data.usu_nom +' '+data.usu_ape+' '+data.usu_div);
         $('#lblfechcrea').val(data.fech_crea);
         $('#lblnomidticket').val(data.tick_id);
         $('#cat_nom').val(data.cat_nom);

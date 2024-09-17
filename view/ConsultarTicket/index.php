@@ -53,6 +53,17 @@
 						</fieldset>
 					</div>
 
+					
+					<div class="col-lg-2">
+						<fieldset class="form-group">
+							<label class="form-label" for="prio_id">División</label>
+							<select class="select2" id="prio_id" name="prio_id" data-placeholder="Seleccionar">
+								<option label="Seleccionar"></option>
+
+							</select>
+						</fieldset>
+					</div>
+					
 					<div class="col-lg-2">
 						<fieldset class="form-group">
 							<label class="form-label" for="prio_id">Nº P.C.</label>
@@ -83,7 +94,7 @@
 						<thead>
 							<tr>
 								<th style="width: 5%;">Nro.Ticket</th>
-								<th style="width: 15%;">Categoria</th>
+								<th style="width: 10%;">Categoria</th>
 								<th class="d-none d-sm-table-cell" style="width: 30%;">Titulo</th>
 								<th class="d-none d-sm-table-cell" style="width: 5%;">Nº P.C.</th>
 								<th class="d-none d-sm-table-cell" style="width: 5%;">Estado</th>
@@ -92,6 +103,7 @@
 								<th class="d-none d-sm-table-cell" style="width: 10%;">Fecha Cierre</th>
 								<th class="d-none d-sm-table-cell" style="width: 10%;">Soporte</th>
 								<th class="text-center" style="width: 5%;"></th>
+								<th class="d-none d-sm-table-cell" style="width: 5%;">División</th>	
 							</tr>
 						</thead>
 						<tbody>

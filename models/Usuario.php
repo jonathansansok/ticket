@@ -33,6 +33,7 @@
                                 $_SESSION["usu_id"]=$resultado["usu_id"];
                                 $_SESSION["usu_nom"]=$resultado["usu_nom"];
                                 $_SESSION["usu_ape"]=$resultado["usu_ape"];
+                                $_SESSION["usu_div"]=$resultado["usu_div"];
                                 $_SESSION["rol_id"]=$resultado["rol_id"];
                                 header("Location:".Conectar::ruta()."view/Home/");
                                 exit(); 
@@ -47,7 +48,7 @@
         }
 
         /* TODO:Insert */
-        public function insert_usuario($usu_nom,$usu_ape,$usu_correo,$usu_pass,$rol_id,$usu_telf){
+        public function insert_usuario($usu_nom,$usu_ape,$usu_correo,$usu_pass,$rol_id,$usu_telf,$usu_div){
 
             $key="mi_key_secret";
             $cipher="aes-256-cbc";
@@ -57,11 +58,12 @@
 
             $conectar= parent::conexion();
             parent::set_names();
-            $sql="INSERT INTO tm_usuario (usu_id, usu_nom, usu_ape, usu_correo, usu_pass, rol_id, usu_telf, fech_crea, fech_modi, fech_elim, est) 
+            $sql="INSERT INTO tm_usuario (usu_id, usu_nom, usu_ape, usu_div, usu_correo, usu_pass, rol_id, usu_telf, fech_crea, fech_modi, fech_elim, est) 
                     VALUES (NULL,?,?,?,?,?,?,now(), NULL, NULL, '1');";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1, $usu_nom);
             $sql->bindValue(2, $usu_ape);
+            $sql->bindValue(2, $usu_div);
             $sql->bindValue(3, $usu_correo);
             $sql->bindValue(4, $textoCifrado);
             $sql->bindValue(5, $rol_id);
@@ -71,7 +73,7 @@
         }
 
         /* TODO:Update */
-        public function update_usuario($usu_id,$usu_nom,$usu_ape,$usu_correo,$usu_pass,$rol_id,$usu_telf){
+        public function update_usuario($usu_id,$usu_nom,$usu_ape,$usu_div,$usu_correo,$usu_pass,$rol_id,$usu_telf){
 
             $key="mi_key_secret";
             $cipher="aes-256-cbc";
@@ -84,6 +86,7 @@
             $sql="UPDATE tm_usuario set
                 usu_nom = ?,
                 usu_ape = ?,
+                usu_div = ?,
                 usu_correo = ?,
                 usu_pass = ?,
                 rol_id = ?,
@@ -93,6 +96,7 @@
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1, $usu_nom);
             $sql->bindValue(2, $usu_ape);
+            $sql->bindValue(2, $usu_div);
             $sql->bindValue(3, $usu_correo);
             $sql->bindValue(4, $textoCifrado);
             $sql->bindValue(5, $rol_id);

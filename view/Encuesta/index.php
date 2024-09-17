@@ -57,6 +57,14 @@
                             <input type="text" class="form-control" id="cats_nom" name="cats_nom" readonly>
                         </div>
                     </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="fechaActual">División</label>
+                            <input type="text" class="form-control" id="prio_div" name="prio_div" readonly>
+                        </div>
+                    </div>
+
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="fechaActual">Nº P.C.</label>
