@@ -12,8 +12,8 @@
                     <input type="hidden" id="prio_id" name="prio_id">
 
                     <div class="form-group">
-                        <label class="form-label" for="prio_nom">Nombre</label>
-                        <input type="text" class="form-control" id="prio_nom" name="prio_nom" placeholder="Ingrese Nombre" required>
+                        <label class="form-label" for="prio_nom">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="prio_nom" name="prio_nom" placeholder="Ingrese Nombre y apellido" required>
                     </div>
 
                 </div>

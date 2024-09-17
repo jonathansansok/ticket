@@ -12,8 +12,8 @@
                     <input type="hidden" id="cat_id" name="cat_id">
 
                     <div class="form-group">
-                        <label class="form-label" for="cat_nom">Nombre</label>
-                        <input type="text" class="form-control" id="cat_nom" name="cat_nom" placeholder="Ingrese Nombre" required>
+                        <label class="form-label" for="cat_nom">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="cat_nom" name="cat_nom" placeholder="Ingrese Nombre y apellido" required>
                         
                     </div>
 

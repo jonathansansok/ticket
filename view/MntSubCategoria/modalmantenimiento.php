@@ -19,8 +19,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="cats_nom">Nombre</label>
-                        <input type="text" class="form-control" id="cats_nom" name="cats_nom" placeholder="Ingrese Nombre" required>
+                        <label class="form-label" for="cats_nom">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="cats_nom" name="cats_nom" placeholder="Ingrese Nombre y apellido" required>
                     </div>
 
                 </div>

@@ -12,13 +12,13 @@
                     <input type="hidden" id="usu_id" name="usu_id">
 
                     <div class="form-group">
-                        <label class="form-label" for="usu_nom">Nombre</label>
-                        <input type="text" class="form-control" id="usu_nom" name="usu_nom" placeholder="Ingrese Nombre" required>
+                        <label class="form-label" for="usu_nom">Nombre y apellido</label>
+                        <input type="text" class="form-control" id="usu_nom" name="usu_nom" placeholder="Ingrese Nombre y apellido" required>
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="usu_ape">Apellido</label>
-                        <input type="text" class="form-control" id="usu_ape" name="usu_ape" placeholder="Ingrese Apellido" required>
+                        <label class="form-label" for="usu_ape">División</label>
+                        <input type="text" class="form-control" id="usu_ape" name="usu_ape" placeholder="Ingrese división" required>
                     </div>
 
                     <div class="form-group">
