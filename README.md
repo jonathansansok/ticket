@@ -58,3 +58,6 @@ Dpto. de Riesgo
 Div. Seg. y Contr.
 Sección R.R. H.H. 
 Div. Administrativa
+
+
+Viernes, plataforma de Tickets: Revision grupal y posterior modificacion  de los campos para mejorar eficiencia. 
