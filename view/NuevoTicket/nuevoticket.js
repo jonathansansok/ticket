@@ -6,11 +6,12 @@ function copiarFormulario() {
     var prioridad = $('#prio_id option:selected').text();
     var descripcion = $('#tick_descrip').summernote('code').replace(/<[^>]+>/g, '');
 
-    var contenido = "🔧💻 Título: " + titulo + "\n" +  // Ícono de herramienta y computadora
-                    "Categoría: " + categoria + "\n" +
-                    "Subcategoría: " + subcategoria + "\n" +
-                    "P.C.: " + prioridad + "\n" +
-                    "Descripción: " + descripcion;
+    var contenido = "🔧💻 *[Solicitud de reparación]*\n" +  // Título de solicitud de reparación
+                    "*Título*: " + titulo + "\n" +  // Ícono de herramienta y computadora
+                    "*Categoría*: " + categoria + "\n" +
+                    "*Subcategoría*: " + subcategoria + "\n" +
+                    "*P.C.*: " + prioridad + "\n" +
+                    "*Descripción*: " + descripcion;
 
     tempTextArea.value = contenido;
     document.body.appendChild(tempTextArea);
@@ -20,7 +21,6 @@ function copiarFormulario() {
 
     alert("Formulario copiado correctamente!");
 }
-
 function init() {
     $("#ticket_form").on("submit", function(e) {
         guardaryeditar(e);
