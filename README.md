@@ -34,3 +34,30 @@ _Copiar la carpeta del proyecto C:\xampp\htdocs, y cambiar la cadena de conexion
 * [JS](https://www.javascript.com/) - FrontEnd
 * [Git](https://git-scm.com/) - Manejador de Versiones
 * [HTML5](https://html5.org/) - FrontEnd
+
+rama ultima con cosas importantes modalok
+nueva rama para modificar companeros
+modscomp
+
+quitar fotos de reparacion por seguridad
+categoria general subcategoria general - Hecho.
+capaz quitar whats app 
+preguntar todas las divisiones  
+cambiar telefono a division telefono 
+correo electronico que sea usuario nomas 
+juangonzalez
+juangonzalezcred. le saco que no me pida arroba 
+quitar archivos adjuntos de documentos adicionales del ticket.
+quizas quitar chat de usuario que solicita reparaciones. 
+Crear un usuario que sea Soporte - general .
+
+Dirección
+Encargado General.
+Dpto. de Reunión
+Dpto. de de Analisis
+Dpto. de Riesgo
+Div. Seg. y Contr.
+Sección R.R. H.H. 
+Div. Administrativa
+
+

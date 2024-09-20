@@ -33,13 +33,13 @@
 			</header>
 
 			<div class="box-typical box-typical-padding">
-				<button type="button" id="btnnuevo" class="btn btn-inline btn-primary">Nuevo Registro</button>
+				<button type="button" id="btnnuevo" class="btn btn-inline btn-primary">Nuevo Usuario</button>
 				<table id="usuario_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
 					<thead>
 						<tr>
 							<th style="width: 10%;">Nombre y apellido</th>
-							<th style="width: 10%;">División</th>
-							<th class="d-none d-sm-table-cell" style="width: 40%;">Correo</th>
+							<th style="width: 10%;">Sección</th>
+							<th class="d-none d-sm-table-cell" style="width: 40%;">Usuario</th>
 							<th class="d-none d-sm-table-cell" style="width: 5%;">Contraseña</th>
 							<th class="d-none d-sm-table-cell" style="width: 5%;">Rol</th>
 							<th class="text-center" style="width: 5%;"></th>

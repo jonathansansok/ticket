@@ -17,17 +17,24 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="usu_ape">División</label>
+                        <label class="form-label" for="usu_ape">Sección</label>
                         <select class="form-control" id="usu_ape" name="usu_ape" required>
                             <option value="">Seleccionar</option>
-                            <option value="Contrainteligencia">Contrainteligencia</option>
-                            <option value="Riesgo">Riesgo</option>
+                            <option value="Dirección">Dirección</option>
+
+                            <option value="Encargado General">Encargado General</option>
+                            <option value="Dpto. de Reunión">Dpto. de Reunión</option>
+                            <option value="Dpto. de Análisis">Dpto. de Análisis</option>
+                            <option value="Dpto. de Riesgo">Dpto. de Riesgo</option>
+                            <option value="Div. Seg. y Contr.">Div. Seg. y Contr.</option>
+                            <option value="Sección R.R. H.H.">Sección R.R. H.H.</option>
+                            <option value="Div. Administrativa">Div. Administrativa</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="usu_correo">Correo Electronico</label>
-                        <input type="email" class="form-control" id="usu_correo" name="usu_correo" placeholder="test@test.com" required>
+                        <label class="form-label" for="usu_correo">Usuario</label>
+                        <input type="email" class="form-control" id="usu_correo" name="usu_correo" placeholder="Ingrese usuario" required>
                     </div>
 
                     <div class="form-group">
@@ -44,8 +51,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="usu_telf">Telefono</label>
-                        <input type="text" class="form-control" id="usu_telf" name="usu_telf" placeholder="Ingrese Telefono" required>
+                        <label class="form-label" for="usu_telf">Teléfono de Sección</label>
+                        <input type="text" class="form-control" id="usu_telf" name="usu_telf" placeholder="Ingrese Teléfono de Sección" required>
                     </div>
 
                 </div>
