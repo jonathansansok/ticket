@@ -60,4 +60,6 @@ Sección R.R. H.H.
 Div. Administrativa
 
 
-Viernes, plataforma de Tickets: Revision grupal y posterior modificacion  de los campos para mejorar eficiencia. 
+Viernes 20/09, plataforma-Tickets: Revision grupal y posterior modificacion (en una nueva copia/rama) de los campos para mejorar eficiencia.
+
+Lunes 23/09

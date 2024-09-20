@@ -1,5 +1,6 @@
 <?php
 require_once("../../config/conexion.php");
+$usu_correo = $_SESSION["usu_correo"];
 if (isset($_SESSION["usu_id"])) {
 ?>
 	<!DOCTYPE html>
@@ -46,7 +47,12 @@ if (isset($_SESSION["usu_id"])) {
 						<form method="post" id="ticket_form">
 
 							<input type="hidden" id="usu_id" name="usu_id" value="<?php echo $_SESSION["usu_id"] ?>">
-
+							<div class="col-lg-12">
+								<fieldset class="form-group">
+									<label class="form-label semibold" for="tick_titulo">Div (*)</label>
+									<input type="text" class="form-control" id="tick_div" name="tick_div" placeholder="Ingrese Div" required>
+								</fieldset>
+							</div>
 							<div class="col-lg-12">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="tick_titulo">Titulo (*)</label>
@@ -62,7 +68,7 @@ if (isset($_SESSION["usu_id"])) {
 									</select>
 								</fieldset>
 							</div>
-
+							
 							<div class="col-lg-6">
 								<fieldset class="form-group">
 									<label class="form-label semibold" for="exampleInput">Subcategoria (*)</label>

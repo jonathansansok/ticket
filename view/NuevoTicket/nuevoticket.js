@@ -5,7 +5,8 @@ function copiarFormulario() {
     var subcategoria = $('#cats_id option:selected').text();
     var prioridad = $('#prio_id option:selected').text();
     var descripcion = $('#tick_descrip').summernote('code').replace(/<[^>]+>/g, '');
-
+    var div = $('#tick_div').val();
+    var correo = $('#usu_correo').val(); // Obtener el correo del input oculto
     // Obtener la fecha y hora actual
     var fecha = new Date();
     var dia = String(fecha.getDate()).padStart(2, '0');
@@ -22,12 +23,14 @@ function copiarFormulario() {
 
     var contenido = "💻🔧 *[Solicitud de reparación]*\n" +  // Título de solicitud de reparación
                     "*Fecha y hora*: " + fecha_formateada + " " + hora_formateada + "\n" +  // Agrega la fecha y hora formateadas
+                    "*Sección*: " + div + "\n" +  // Ícono de herramienta y computadora
                     "*Título*: " + titulo + "\n" +  // Ícono de herramienta y computadora
                     "*Categoría*: " + categoria + "\n" +
                     "*Subcategoría*: " + subcategoria + "\n" +
                     "*P.C.*: " + prioridad + "\n" +
+                    "*Usuario*: " + correo + "\n" +
                     "*Descripción*: " + descripcion;
-
+                    
     tempTextArea.value = contenido;
     document.body.appendChild(tempTextArea);
     tempTextArea.select();
