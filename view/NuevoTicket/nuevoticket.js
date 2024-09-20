@@ -1,7 +1,34 @@
+function copiarFormulario() {
+    var tempTextArea = document.createElement("textarea");
+    var titulo = $('#tick_titulo').val();
+    var categoria = $('#cat_id option:selected').text();
+    var subcategoria = $('#cats_id option:selected').text();
+    var prioridad = $('#prio_id option:selected').text();
+    var descripcion = $('#tick_descrip').summernote('code').replace(/<[^>]+>/g, '');
 
-function init(){
-    $("#ticket_form").on("submit",function(e){
+    var contenido = "🔧💻 Título: " + titulo + "\n" +  // Ícono de herramienta y computadora
+                    "Categoría: " + categoria + "\n" +
+                    "Subcategoría: " + subcategoria + "\n" +
+                    "P.C.: " + prioridad + "\n" +
+                    "Descripción: " + descripcion;
+
+    tempTextArea.value = contenido;
+    document.body.appendChild(tempTextArea);
+    tempTextArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempTextArea);
+
+    alert("Formulario copiado correctamente!");
+}
+
+function init() {
+    $("#ticket_form").on("submit", function(e) {
         guardaryeditar(e);
+    });
+
+    // Agrega el evento para el botón copiar
+    $("#btncopiar").click(function() {
+        copiarFormulario();
     });
 }
 
@@ -35,37 +62,38 @@ $(document).ready(function() {
     });
 
     /* TODO: Llenar Combo categoria */
-    $.post("../../controller/categoria.php?op=combo",function(data, status){
+    $.post("../../controller/categoria.php?op=combo", function(data, status) {
         $('#cat_id').html(data);
     });
 
-    $("#cat_id").change(function(){
+    $("#cat_id").change(function() {
         cat_id = $(this).val();
         /* TODO: llenar Combo subcategoria segun cat_id */
-        $.post("../../controller/subcategoria.php?op=combo",{cat_id : cat_id},function(data, status){
+        $.post("../../controller/subcategoria.php?op=combo", {cat_id: cat_id}, function(data, status) {
             $('#cats_id').html(data);
         });
     });
 
-    /* TODO: Llenar combo Prioridad  */
-    $.post("../../controller/prioridad.php?op=combo",function(data, status){
+    /* TODO: Llenar combo Prioridad */
+    $.post("../../controller/prioridad.php?op=combo", function(data, status) {
         $('#prio_id').html(data);
     });
 
+    init();  // Llamamos a init aquí para inicializar todo
 });
 
-function guardaryeditar(e){
+function guardaryeditar(e) {
     e.preventDefault();
 
-    $('#btnguardar').prop("disabled",true);
+    $('#btnguardar').prop("disabled", true);
     $('#btnguardar').html('<i class="fa fa-spinner fa-spin"></i> Espere..');
 
     /* TODO: Array del form ticket */
     var formData = new FormData($("#ticket_form")[0]);
     /* TODO: validamos si los campos tienen informacion antes de guardar */
-    if ($('#tick_descrip').summernote('isEmpty') || $('#tick_titulo').val()=='' || $('#cats_id').val() == 0 || $('#cat_id').val() == 0 || $('#prio_id').val() == 0){
+    if ($('#tick_descrip').summernote('isEmpty') || $('#tick_titulo').val() == '' || $('#cats_id').val() == 0 || $('#cat_id').val() == 0 || $('#prio_id').val() == 0) {
         swal("Advertencia!", "Campos Vacios", "warning");
-    }else{
+    } else {
         var totalfiles = $('#fileElem').val().length;
         for (var i = 0; i < totalfiles; i++) {
             formData.append("files[]", $('#fileElem')[0].files[i]);
@@ -78,7 +106,7 @@ function guardaryeditar(e){
             data: formData,
             contentType: false,
             processData: false,
-            success: function(data){
+            success: function(data) {
                 console.log(data);
                 data = JSON.parse(data);
                 console.log(data[0].tick_id);
@@ -87,13 +115,11 @@ function guardaryeditar(e){
                 $('#tick_titulo').val('');
                 $('#tick_descrip').summernote('reset');
                 /* TODO: Alerta de Confirmacion */
-                swal("Correcto!", "Ticket Registrado Correctamente: Nro-"+ data[0].tick_id, "success");
+                swal("Correcto!", "Ticket Registrado Correctamente: Nro-" + data[0].tick_id, "success");
 
-                $('#btnguardar').prop("disabled",false);
+                $('#btnguardar').prop("disabled", false);
                 $('#btnguardar').html('Guardar');
             }
         });
     }
 }
-
-init();
