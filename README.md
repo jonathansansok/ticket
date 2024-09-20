@@ -40,24 +40,21 @@ nueva rama para modificar companeros
 modscomp
 
 quitar fotos de reparacion por seguridad
-categoria general subcategoria general - Hecho.
-capaz quitar whats app 
-preguntar todas las divisiones  
-cambiar telefono a division telefono 
-correo electronico que sea usuario nomas 
-juangonzalez
-juangonzalezcred. le saco que no me pida arroba 
+categoria general subcategoria general - Hecho. OK
+capaz quitar whats app OK POR AHORA LO DEJO
+preguntar todas las divisiones  OK
+cambiar telefono a division telefono OK
+correo electronico que sea usuario Y no me obligue a tener @ nomas NO ME DEJA 
+
 quitar archivos adjuntos de documentos adicionales del ticket.
 quizas quitar chat de usuario que solicita reparaciones. 
-Crear un usuario que sea Soporte - general .
+Crear un usuario que sea Soporte - general.
 
 Dirección
-Encargado General.
+Encargado General
 Dpto. de Reunión
 Dpto. de de Analisis
 Dpto. de Riesgo
 Div. Seg. y Contr.
 Sección R.R. H.H. 
 Div. Administrativa
-
-

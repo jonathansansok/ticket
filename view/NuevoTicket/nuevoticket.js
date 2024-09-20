@@ -6,7 +6,22 @@ function copiarFormulario() {
     var prioridad = $('#prio_id option:selected').text();
     var descripcion = $('#tick_descrip').summernote('code').replace(/<[^>]+>/g, '');
 
-    var contenido = "🔧💻 *[Solicitud de reparación]*\n" +  // Título de solicitud de reparación
+    // Obtener la fecha y hora actual
+    var fecha = new Date();
+    var dia = String(fecha.getDate()).padStart(2, '0');
+    var mes = String(fecha.getMonth() + 1).padStart(2, '0'); // Los meses empiezan desde 0
+    var anio = fecha.getFullYear();
+
+    // Formatear la hora
+    var horas = String(fecha.getHours()).padStart(2, '0');
+    var minutos = String(fecha.getMinutes()).padStart(2, '0');
+    var segundos = String(fecha.getSeconds()).padStart(2, '0');
+
+    var fecha_formateada = dia + '/' + mes + '/' + anio; // Formato dd/mm/yyyy
+    var hora_formateada = horas + ':' + minutos + ':' + segundos; // Formato HH:mm:ss
+
+    var contenido = "💻🔧 *[Solicitud de reparación]*\n" +  // Título de solicitud de reparación
+                    "*Fecha y hora*: " + fecha_formateada + " " + hora_formateada + "\n" +  // Agrega la fecha y hora formateadas
                     "*Título*: " + titulo + "\n" +  // Ícono de herramienta y computadora
                     "*Categoría*: " + categoria + "\n" +
                     "*Subcategoría*: " + subcategoria + "\n" +
@@ -21,6 +36,7 @@ function copiarFormulario() {
 
     alert("Formulario copiado correctamente!");
 }
+
 function init() {
     $("#ticket_form").on("submit", function(e) {
         guardaryeditar(e);
