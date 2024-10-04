@@ -49,8 +49,8 @@ if (isset($_SESSION["usu_id"])) {
 							<input type="hidden" id="usu_id" name="usu_id" value="<?php echo $_SESSION["usu_id"] ?>">
 							<div class="col-lg-12">
 								<fieldset class="form-group">
-									<label class="form-label semibold" for="tick_titulo">Div (*)</label>
-									<input type="text" class="form-control" id="tick_div" name="tick_div" placeholder="Ingrese Div" required>
+									<label class="form-label semibold" for="tick_titulo">División, Sección o Espacio</label>
+									<input type="text" class="form-control" id="tick_div" name="tick_div" placeholder="Especifique lugar" required>
 								</fieldset>
 							</div>
 							<div class="col-lg-12">
@@ -109,7 +109,7 @@ if (isset($_SESSION["usu_id"])) {
 									Copiar Formulario
 								</button>
 								<button type="submit" id="btnguardar" name="action" value="add" class="btn btn-rounded btn-inline btn-primary">
-									Guardar
+									Enviar
 								</button>
 
 							</div>
